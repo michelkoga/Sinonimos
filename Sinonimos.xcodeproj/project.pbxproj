@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DE687CA121975A6F0079EBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE687CA021975A6F0079EBB7 /* AppDelegate.swift */; };
-		DE687CA321975A6F0079EBB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE687CA221975A6F0079EBB7 /* ViewController.swift */; };
 		DE687CA621975A6F0079EBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE687CA421975A6F0079EBB7 /* Main.storyboard */; };
 		DE687CA921975A6F0079EBB7 /* Sinonimos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE687CA721975A6F0079EBB7 /* Sinonimos.xcdatamodeld */; };
 		DE687CAB21975A700079EBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE687CAA21975A700079EBB7 /* Assets.xcassets */; };
 		DE687CAE21975A700079EBB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE687CAC21975A700079EBB7 /* LaunchScreen.storyboard */; };
+		DE687CB621975CB60079EBB7 /* SinonimosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE687CB521975CB60079EBB7 /* SinonimosTableViewController.swift */; };
+		DE687CB821975CF90079EBB7 /* Sinonimos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE687CB721975CF90079EBB7 /* Sinonimos.swift */; };
+		DE687CBB21975DED0079EBB7 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE687CBA21975DED0079EBB7 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE687C9D21975A6F0079EBB7 /* Sinonimos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinonimos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE687CA021975A6F0079EBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE687CA221975A6F0079EBB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE687CA521975A6F0079EBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE687CA821975A6F0079EBB7 /* Sinonimos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sinonimos.xcdatamodel; sourceTree = "<group>"; };
 		DE687CAA21975A700079EBB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE687CAD21975A700079EBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE687CAF21975A700079EBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE687CB521975CB60079EBB7 /* SinonimosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinonimosTableViewController.swift; sourceTree = "<group>"; };
+		DE687CB721975CF90079EBB7 /* Sinonimos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sinonimos.swift; sourceTree = "<group>"; };
+		DE687CBA21975DED0079EBB7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,9 @@
 		DE687C9F21975A6F0079EBB7 /* Sinonimos */ = {
 			isa = PBXGroup;
 			children = (
+				DE687CB521975CB60079EBB7 /* SinonimosTableViewController.swift */,
+				DE687CB921975D030079EBB7 /* API */,
 				DE687CA021975A6F0079EBB7 /* AppDelegate.swift */,
-				DE687CA221975A6F0079EBB7 /* ViewController.swift */,
 				DE687CA421975A6F0079EBB7 /* Main.storyboard */,
 				DE687CAA21975A700079EBB7 /* Assets.xcassets */,
 				DE687CAC21975A700079EBB7 /* LaunchScreen.storyboard */,
@@ -65,6 +70,15 @@
 				DE687CA721975A6F0079EBB7 /* Sinonimos.xcdatamodeld */,
 			);
 			path = Sinonimos;
+			sourceTree = "<group>";
+		};
+		DE687CB921975D030079EBB7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DE687CBA21975DED0079EBB7 /* APIClient.swift */,
+				DE687CB721975CF90079EBB7 /* Sinonimos.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE687CB621975CB60079EBB7 /* SinonimosTableViewController.swift in Sources */,
+				DE687CB821975CF90079EBB7 /* Sinonimos.swift in Sources */,
 				DE687CA921975A6F0079EBB7 /* Sinonimos.xcdatamodeld in Sources */,
-				DE687CA321975A6F0079EBB7 /* ViewController.swift in Sources */,
+				DE687CBB21975DED0079EBB7 /* APIClient.swift in Sources */,
 				DE687CA121975A6F0079EBB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
